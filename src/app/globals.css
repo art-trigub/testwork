@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #F5F5F8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,14 +14,126 @@
   }
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.main_header{
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  width: 800px;
+  text-align: center;
+  line-height: 55px;
+
+}
+
+.content__wrap{
+  width: 1372px;
+  max-width: 1372px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.content_item__wrap{
+  width: 437px;
+  max-width: 437px;
+  height: 336px;
+  max-height: 332px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  border-radius: 8px;  
+  overflow: hidden;
+  display: flex;
+}
+
+.mt-6{
+  margin-top: 3px;
+}
+
+.content_item_image__container{
+  width: 183px;
+  max-width: 183px;
+}
+
+.content_item_description__container{
+  width: 200px;
+  max-width: 200px;
+  margin: 40px auto;
+  height: 200px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+
+.content_item_description__title{
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  width: 200px;
+  max-width: 200px;
+}
+
+.content_item_description__list li{
+  line-height: 26px;
+  list-style-type: none;
+}
+
+li:before {
+  font-weight: 400;
+  color: #D2AD81;
+  content: "•";
+  font-size: 22px;
+  padding-right: 7px; 
+ }
+
+.content_item_description__text{
+  line-height: 24px;
+}
+
+.main_button_wrap{
+  display: flex;
+  margin: 80px auto;
+  width: 350px;
+  height: 60px;
+}
+
+.main_button{
+  width: 350px;
+  height: 60px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+
+
+
 body {
-  color: rgb(var(--foreground-rgb));
+
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.content_item_image__container{
+  margin-left: -1px;
 }
 
 @layer utilities {
