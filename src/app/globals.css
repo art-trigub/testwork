@@ -15,13 +15,25 @@
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  font-family: 'poppinsbold';
+  src: url('../../public/font/poppins-bold-webfont.woff2') format('woff2'),
+       url('../../public/font/poppins-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Nunito Sans";
-  src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+  font-family: 'NunitoBold';
+  src: url('../../public/font/Nunito-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSemiBold';
+  src: url('../../public/font/Nunito-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -32,9 +44,9 @@
 }
 
 .main_header{
-  font-family: "Poppins", sans-serif;
+  font-family: 'poppinsbold';
   font-size: 56px;
-  font-weight: 900;
+  font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
   width: 800px;
   text-align: center;
@@ -74,12 +86,11 @@
   max-width: 200px;
   margin: 40px auto;
   height: 200px;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 15px;
 }
 
 .content_item_description__title{
-  font-family: "Poppins", sans-serif;
+  font-family: "poppinsbold";
   font-size: 24px;
   width: 200px;
   max-width: 200px;
@@ -88,6 +99,7 @@
 .content_item_description__list li{
   line-height: 26px;
   list-style-type: none;
+  font-family: "NunitoBold";
 }
 
 li:before {
@@ -100,6 +112,7 @@ li:before {
 
 .content_item_description__text{
   line-height: 24px;
+  font-family: "NunitoSemiBold";
 }
 
 .main_button_wrap{
@@ -114,7 +127,7 @@ li:before {
   height: 60px;
   border-radius: 12px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppinsbold";
   font-size: 17px;
   letter-spacing: 3px;
 }
